@@ -1,6 +1,6 @@
 # Establish what the proposed design could answer
 
-Start with the exact scientific claim, target quantity or model comparison, population, independent unit, operational measurements and scope of generalization. Link each indispensable observed condition to documentation or an executed check. State inferential assumptions separately. Choose the diagnosis that could change the decision; file counts, full rank or successful code execution alone do not establish answerability.
+Start with the exact scientific claim, target quantity or model comparison, population, independent unit, operational measurements and scope of generalization. Separate a summary of the observed records from a claim about a generating process or population. For the latter, explain how sampling variation and dependence enter the proposed inference; stability across transformations of the same observations is not independent replication. Link indispensable observed conditions to documentation or an executed check, and state inferential assumptions separately. Choose the diagnosis that could change the decision; file counts, full rank or successful code execution alone do not establish answerability.
 
 ## Match the check to the question
 
