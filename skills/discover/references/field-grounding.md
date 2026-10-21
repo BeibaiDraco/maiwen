@@ -1,0 +1,23 @@
+# Find open questions across connected fields
+
+Build `field.md` as a map of scientific opportunities. Begin with the processes, concepts and variation suggested by the data's collection purpose and broad reconnaissance. Follow connections to open problems, disputed explanations and unexplained observations across topics. Keep a user direction as a priority while considering useful connections beyond it. Save provisional ideas as the map develops; detailed feasibility checks belong to development of the strongest opportunities.
+
+## Expand the scientific search
+
+Search through nearby experiments, relevant theory, and other systems or tasks that address a shared scientific problem. Use reviews to learn the vocabulary and competing positions, then follow consequential arguments to primary sources, contrasting experiments and later work. Expand queries through conceptual synonyms and shared functions, even when a paper uses different measurements, organisms or field labels. Give a distant connection a scientific reason: what common problem or distinction makes its reasoning useful here?
+
+Let several distinct opportunities emerge before one candidate becomes the organizing frame. Write the open question, why resolving it matters, plausible competing answers or an informative unknown, and the observable difference that could advance understanding. Include theoretical and experimental perspectives where they bear on the opportunity. A surprising regularity, a theory's boundary condition or a useful descriptive question can be worth pursuing without competing mechanisms. Mark what is established, disputed and still an extrapolation, with source locators and reading depth.
+
+## Translate theory into something the data could distinguish
+
+For an influential theory, reconstruct its explanatory aim, assumptions and original predictions. Separately identify any extension you propose. Derive the relevant observable contrast and consider alternatives that could produce it. Map the required measurements, variation and timescale to this dataset, recording what is present and what needs checking. State whether the comparison tests a consequence, a boundary condition, or one implementation of the theory; a computational principle alone does not locate its implementation in a particular physical component.
+
+A theoretical question may call for a contrast, scaling relation, invariance, geometry or response to a perturbation; choose the observable that bears on the argument. Specify a model or derivation when it makes the predicted distinction explicit, and assess it with source-backed reasoning or synthetic design checks within the authorized scope. If several theories predict the same observable, identify what additional contrast would separate them and whether this dataset contains it. Keep an inspiring connection visible when its test is not yet established; distinguish a missing investigation from a known missing essential condition.
+
+For empirical findings, compare the population, task, measurement, intervention or observational design and strength of inference. Investigate supporting and conflicting results and the design differences that could explain them. Use [paper learning](paper-learning.md) to reconstruct useful question-forming moves and check their transfer conditions. Use [prior-use](../../prior-use/SKILL.md) to establish what these observations have already answered.
+
+## Bring the opportunities back to this dataset
+
+Compare promising opportunities on the knowledge each could change and the data feature that could make progress possible. Keep bold connections as provisional candidates while checking their strongest premise; prioritize or reject with a specific source, data fact or inferential reason. Record a concise source-to-opportunity link and the decisive unknown in `field.md` and `candidates.md`. A metric change alone adds no scientific breadth. If a leading question loses its payoff, revisit a genuinely different opportunity within the remaining budget.
+
+Before deep investment, give the map and source pointers to the bounded foundation review. Ask the reviewer to look beyond the proposed candidates for a consequential missing perspective, competing account or connection to another field, and check whether any stated theoretical prediction follows from its source. Repair the map and affected candidates together. Scale searching to the task budget: follow leads that could change the opportunity ranking, then develop the strongest questions when further searching adds little. Record consequential unexplored leads and access limits; the map shows the search's scope rather than certifying exhaustive coverage.

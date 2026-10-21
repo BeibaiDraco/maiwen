@@ -1,0 +1,13 @@
+# Check what observations mean before counting support
+
+For measurements central to a candidate, trace the field from collection or processing documentation into the loader and a small authorized sample. Write its physical/scientific meaning, units, reference event, timing resolution, valid range and special codes. Separate documented meaning, code inference, observation and owner report; ask the owner when a necessary meaning remains unresolved.
+
+Define the scientific object before the proxy. Compare defensible definitions when they affect eligibility, windows or denominators. Before recoding or excluding a special value, save the proposed mapping, its documented or code-derived meaning, and a consistency check against related fields or collection constraints. Agreement between fields derived from the same label is not independent validation. If sources conflict, preserve original values, isolate affected comparisons and mark the mapping unresolved rather than silently normalizing it.
+
+Count at the independent unit and the required nested comparisons. Include the denominator, planning sample selection, filters and counts before/after relevant exclusions. A large number of rows cannot replace independent units. Coverage used to plan a comparison must not quietly estimate its target effect.
+
+For joined measurements, verify key multiplicity, identity, clock conversion and valid simultaneous windows per unit. Coexisting files or shared session identifiers establish locations, not usable observations. Inspect the required signal/window in a bounded sample when metadata cannot establish validity; do not reject a modality merely because it has not yet been opened.
+
+Read relevant preprocessing and release/correction notes. Trace any transformation that could change the meaning needed by the comparison: ordering, time coordinates, selected records, labels or units. For example, increasing exported timestamps establish an order in that representation; original acquisition order or elapsed time needs evidence that upstream processing preserved it. Distinguish the local data version from the documentation version and verify whether a correction reached the local files. If a known problem could change the claim, resolve it or retain it as a necessary pending condition. Preserve unaffected directions while investigating.
+
+Save small reproducible scripts and aggregate results in `card_checks/`, together with input scope and the decision each check informs. Expand inspection only where it could change feasibility or the question. Avoid universal thresholds copied from one dataset or paper.

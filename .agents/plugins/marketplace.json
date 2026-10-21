@@ -1,0 +1,20 @@
+{
+  "name": "maiwen-local",
+  "interface": {
+    "displayName": "Maiwen local development"
+  },
+  "plugins": [
+    {
+      "name": "maiwen",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research"
+    }
+  ]
+}

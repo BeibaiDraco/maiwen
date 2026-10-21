@@ -1,0 +1,9 @@
+{
+  "name": "maiwen",
+  "version": "0.1.0-rc.15",
+  "description": "Develop worthwhile, dataset-answerable research questions inside the host.",
+  "author": {
+    "name": "Yunlong Xu"
+  },
+  "skills": "./skills/"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "maiwen-local",
+  "owner": {
+    "name": "Yunlong Xu"
+  },
+  "plugins": [
+    {
+      "name": "maiwen",
+      "source": "./",
+      "description": "Develop worthwhile, dataset-answerable research questions."
+    }
+  ],
+  "description": "Maiwen scientific question-development skills"
+}
