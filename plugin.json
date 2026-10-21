@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "maiwen",
-  "version": "0.1.0-rc.15",
+  "version": "0.1.0-rc.17",
   "description": "Develop worthwhile, dataset-answerable research questions inside a coding-agent host.",
   "extensions": {
     "com.openai": {

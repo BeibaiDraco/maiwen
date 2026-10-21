@@ -18,7 +18,7 @@ For a case worth using, explain in ordinary prose:
 - What would different plausible results mean, and which explanations remain possible?
 - What reasoning move might transfer, and where would it fail?
 
-Attach source locators to paper facts. Label your reconstruction of the reasoning as an interpretation; do not invent the authors' historical thought process. Keep necessary conditions even when they are dataset-specific in the source. A sample size used in one paper is not a universal threshold.
+For a transfer that determines a candidate, reopen the decisive result and methods: identify the actual population, comparison and inference it supports, with a figure, equation or passage locator. Separate the source's conclusion from your proposed extension, then try a concrete counterexample to that extension. Preserve selection conditions and distinct mechanisms rather than merging them under a convenient label. Label your reconstruction as an interpretation; do not invent the authors' historical thought process. Keep necessary conditions even when they are dataset-specific in the source. A sample size used in one paper is not a universal threshold.
 
 ## Use the case to change a question
 

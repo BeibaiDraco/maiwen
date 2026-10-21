@@ -1,7 +1,7 @@
 {
   "name": "maiwen-local",
   "interface": {
-    "displayName": "Maiwen local development"
+    "displayName": "Maiwen"
   },
   "plugins": [
     {

@@ -4,7 +4,7 @@ Translate the candidate into scientific objects, relationship, measurement, comp
 
 Start with the closest primary papers, then choose useful expansions: citing/follow-up papers, the same group's later work, relevant references, recent preprints, theses or conference papers, and associated analysis repositories. Read release or correction notes when they affect the data. An older paper's acknowledged gap is a lead to search forward, not evidence the gap remains.
 
-Read enough of the closest methods/results to compare the actual claim, scope, measurements and identifying conditions. Record concise citations and page/figure/section/code locators. Label what an abstract supports and what requires unavailable full text. Do not treat a search result, dataset citation or title match as proof of equivalence.
+Before a nearby paper supports a novelty or rejection decision, inspect its relevant results and methods, including figures, subgroups, aliases and related tasks. A mixed population can contain relevant prior evidence without being the same dataset. Record separately what is known about exact-observation reuse, the broader scientific precedent and the comparison still unresolved. Cite the decisive page/figure/section/code locator. Label what an abstract supports and what requires unavailable full text. Do not treat a search result, dataset citation or title match as proof of equivalence.
 
 Write a side-by-side substantive comparison: what was answered, what this candidate changes, whether that change matters, and what evidence is missing. A different dataset or algorithm alone does not establish contribution; improved scope, measurement, explanation, precision or a valuable replication may do so with an argument.
 
