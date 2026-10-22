@@ -1,9 +1,18 @@
 {
   "name": "maiwen",
-  "version": "0.1.0-rc.18",
+  "version": "0.2.0-beta.1",
   "description": "Develop worthwhile, dataset-answerable research questions inside the host.",
   "author": {
     "name": "Yunlong Xu"
   },
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "homepage": "https://github.com/BeibaiDraco/maiwen",
+  "repository": "https://github.com/BeibaiDraco/maiwen",
+  "license": "Apache-2.0",
+  "keywords": [
+    "science",
+    "research",
+    "questions",
+    "planning"
+  ]
 }

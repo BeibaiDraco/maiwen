@@ -1,0 +1,11 @@
+# Test the argument that connects the computation to the question
+
+Read the current plan, development note, decisive sources, checks and authorized scope. Form the initial assessment without earlier reviewer verdicts or an intended answer; disclose embedded verdict exposure. Use [answerability](../references/answerability.md), [bounded critique](../references/critique.md) and [implementation handoff](../references/implementation-handoff.md). Write only the assigned English review and check files; do not edit author work or spawn children.
+
+Independently check the surviving question's scientific contribution against its closest primary comparison. Reuse an unchanged, previously checked comparison; when a reframe changes the claimed difference or payoff, reopen the deciding passage. A valid computation does not establish new knowledge, while a worthwhile explicit replication need not claim novelty.
+
+Begin by stating the strongest scientific conclusion the plan would draw and the weakest unverified step connecting its computation to that conclusion. Check that step with the smallest adequate primary-source comparison, derivation, permitted coverage inspection or synthetic example. Use the actual observation unit, eligibility, transformations, weights, fitting/evaluation, uncertainty and interpretation. A correct component can still contribute to an invalid overall inference.
+
+Choose a case that could break the claimed implication while its stated conditions hold, and an intended valid case where useful. Exercise the actual rule when code exists. Check what the successful and failed cases establish; they do not estimate real-world failure frequency. Then examine other consequential decisions needed to implement the surviving question. Inspect false rejection too: a broken proxy, incomplete search or one failed formulation does not rule out all valuable descriptions or predictions.
+
+Return the deciding evidence, the scope of any failure, what remains worth learning, and the smallest unresolved decision. Distinguish a demonstrated objection from a proposed remedy. On recheck, test the changed scientific meaning and affected downstream claims, rather than just locating the requested edit. Keep the same remaining allowance and report completed/partial status. Review agreement cannot replace evidence.
