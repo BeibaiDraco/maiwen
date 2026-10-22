@@ -10,7 +10,7 @@ Maiwen helps develop those questions inside Codex or Claude Code. It studies the
 
 [Install](QUICKSTART.md) · [Read an example](examples/README.md) · [Explore the workflow](WORKFLOW.md)
 
-> **Research preview · 0.2.0-beta.1.** [Get started](QUICKSTART.md) · [Validation and limitations](docs/LIMITATIONS.md)
+> **Research preview · 0.2.0-beta.2.** [Get started](QUICKSTART.md) · [Validation and limitations](docs/LIMITATIONS.md)
 
 ## Start with your data
 
@@ -26,7 +26,7 @@ For each developed question, the final report explains what is unknown, why an a
 
 The report links to the field overview, paper notes, data checks, candidate history and reviews. You can inspect what informed an idea and why it was kept, changed or rejected. All saved research documents are in English.
 
-The [IBL example](examples/ibl-conditional-question.md) follows a real question about neural timescales through a measurement problem that remained unresolved. The [measurement walkthrough](examples/walkthrough.md) shows how a broad idea becomes a precise comparison and a proposed calculation.
+The [IBL example](examples/ibl-conditional-question.md) explains a real question about neural timescales: why it matters, how paired recordings could answer it, what different results would mean, and which measurement choices still need work. The [measurement walkthrough](examples/walkthrough.md) shows how a broad idea becomes a precise comparison and a proposed calculation.
 
 ## How Maiwen develops a question
 

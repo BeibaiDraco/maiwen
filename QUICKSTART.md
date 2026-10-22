@@ -22,7 +22,7 @@ claude plugin install maiwen@maiwen
 
 In an interactive Claude Code session, use `/plugin marketplace add BeibaiDraco/maiwen`, then `/plugin install maiwen@maiwen` and choose the installation scope in the plugin panel.
 
-Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.1`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the installation checks performed and the host configurations tested. Official directory listings are separate from this GitHub marketplace.
+Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.2`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the installation checks performed and the host configurations tested. Official directory listings are separate from this GitHub marketplace.
 
 ### Install a downloaded copy
 
