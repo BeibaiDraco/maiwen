@@ -1,73 +1,82 @@
-# Start a Maiwen research session
+# Start with Maiwen
 
-Maiwen develops scientific questions and analysis plans inside your existing Codex or Claude Code session. Give it an accessible dataset; a direction and local PDFs are optional. The current package is a private release candidate. Its methods still need evaluation on additional real datasets; no tool can guarantee a discovery or publishable result.
+Use Codex or Claude Code with local file/code tools and native subagents. Sign in through your host. Maiwen uses its existing model, account, permissions and tools; no separate model API key is required. Literature work also needs a way to search and read sources.
 
-## Prerequisites
+## Install the complete plugin
 
-Use a current host with local file and command access plus literature search. Sign in through your intended host subscription. Maiwen does not choose a model, supply an API key or start another inference service; host account settings and usage limits still apply. Python 3.11+ runs the optional structural profiler. Parquet needs `pyarrow`, HDF5/NWB needs `h5py`; install readers only when your data require them.
+This review candidate is installed from a local checkout or an extracted ZIP. Keep the directory in a stable location, such as a `plugins/maiwen` folder. Replace the example path with that directory; it must contain `plugin.json` and `skills/`.
 
-Unpack the supplied plugin directory somewhere stable. Open a separate research folder in your host, so your data, notes and research instructions stay separate from plugin development history. Make the authorized data path accessible to that host; a path on another machine is not automatically mounted. Permissions and any confirmation-data isolation are enforced by the host/environment, not these skills.
-
-## Codex
-
-Register the unpacked directory as a local marketplace:
+**Codex CLI**
 
 ```bash
-codex plugin marketplace add /absolute/path/to/maiwen-plugin
+codex plugin marketplace add /absolute/path/to/maiwen
+codex plugin add maiwen@maiwen
 ```
 
-Install `maiwen` from `maiwen-local` in the App's Plugins directory, then start a new chat in your research folder. On Codex CLI versions exposing `plugin add`, the equivalent installation is:
+**Claude Code CLI**
 
 ```bash
-codex plugin add maiwen@maiwen-local
+claude plugin marketplace add /absolute/path/to/maiwen
+claude plugin install maiwen@maiwen
 ```
 
-Select the installed Maiwen `discover` skill or explicitly ask the host to use Maiwen for the request below. Confirm that it finds the installed skill and resolves its accompanying references. Updating the source folder alone may leave an old cached copy: refresh/reinstall through the host and start a new chat, checking the reported version.
+In an interactive Claude Code session, the equivalent commands are `/plugin marketplace add /absolute/path/to/maiwen` and `/plugin install maiwen@maiwen`.
 
-The [official packaging guide](https://developers.openai.com/plugins/build/plugins) describes local marketplaces and App installation. Menu names can vary by host version. If the plugin is unavailable, explicitly reading the supplied `skills/discover/SKILL.md` is a temporary method trial, not proof installation worked.
+Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.1`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. Native CLI loading and a complete desktop App workflow are separate checks; see [validation scope](docs/LIMITATIONS.md). Official directory listing is pending. Once a public repository is approved, GitHub installation instructions will be added and verified against that exact source.
 
-## Claude Code
+### Existing private-preview users
 
-For a session-local test from your research folder:
+The marketplace name is now `maiwen`; earlier previews used `maiwen-local`. Remove the old plugin before installing the new identity to avoid loading two versions:
 
 ```bash
-claude --plugin-dir /absolute/path/to/maiwen-plugin
+# Codex
+codex plugin remove maiwen@maiwen-local
+# Claude Code
+claude plugin uninstall maiwen@maiwen-local
 ```
 
-Invoke `/maiwen:discover` with your dataset. For persistent installation, register the directory and install it:
+Your research workspace is separate from the plugin. Keep it; open a fresh host session after changing the installed method. Do not edit an installed cache to update the plugin.
 
-```bash
-claude plugin marketplace add /absolute/path/to/maiwen-plugin
-claude plugin install maiwen@maiwen-local
-```
+## Begin discovery
 
-Start a new session and verify `/maiwen:discover`, `/maiwen:dataset-card` and `/maiwen:prior-use` are available. For Claude's desktop Code surface, use its plugin installation UI and check the commands in a new project chat; CLI success alone does not certify that UI. See [Claude's plugin documentation](https://code.claude.com/docs/en/plugins) and [marketplace installation](https://code.claude.com/docs/en/plugin-marketplaces).
+In Codex, ask the host to use Maiwen `discover`. In Claude Code, invoke `/maiwen:discover` or ask for it in ordinary conversation:
 
-## First request
+> Find scientifically worthwhile questions this dataset can answer: `/absolute/data/path`. I have no seed question. First check the inputs, tell me what is missing or optional, and agree on a finite budget. Save the research in English.
 
-> Use Maiwen to find scientifically worthwhile questions this dataset can answer: `/absolute/data/path`.
+The host starts with what it knows, what is needed now, and what would help. It can discover files and documentation itself. Owner-only facts, authorization boundaries and the budget may need your answer. PDFs, a direction and a prebuilt pattern bank are optional. Unknown facts remain visible rather than being filled in by guesswork.
 
-The dataset or an accessible location is the essential input. You can have no research direction and no local papers. If the location is not yet usable, Maiwen can work with supplied documentation or literature while you resolve access, but it cannot yet claim the data can answer a question.
+The complete workflow is substantial research and may take hours with parallel tasks. For a shorter first look, ask for a data card or a literature/pattern bank with a defined scope. A short onboarding check is not a complete discovery. You can stop or narrow the work at any point.
 
-Expect a short opening showing what Maiwen already knows, what it still needs to begin, and what you can optionally add:
+## Choose the model in the host
 
-- A direction or seed question focuses the search; “I have no direction” is fine.
-- A local PDF folder supplies starting examples; Maiwen can also find literature itself.
-- Known publications or ongoing work help it avoid duplication.
-- Priorities and a time or usage budget help it allocate effort.
+Maiwen inherits your selected model and reasoning settings. It does not silently upgrade a model, switch an account or route requests to a separate paid API. For complex scientific reasoning, use a capable reasoning model available on your plan; higher reasoning effort may trade latency and usage for deeper work. There is no Maiwen-specific model name or universal best setting. Keep the host/model settings with the run's notes when comparing outputs.
 
-Maiwen reads accessible documentation and data details itself, then groups the few consequential questions it cannot resolve. If you have already supplied enough, it starts. You do not need to fill out a form or write a research protocol. Missing information limits the affected questions, while other useful work continues. The [intake guide](skills/discover/references/intake.md) describes this behavior.
+Native subagents are needed for the complete independent workflow. If they or required sources are unavailable, the host should save useful preparation and a precise review handoff. It should not label self-review as independent review.
 
-The default is planning: inspect authorized data and coverage, including outcome counts, distributions and missingness; develop and check questions; deliver proposed analyses. It does not run candidate target-effect tests, search for significance, execute the full study or inspect confirmation outcomes. See [planning scope](skills/dataset-card/references/generic-probes.md#default-planning-scope).
+## Build a reusable pattern bank
 
-The host may send inspected fields, bounded samples and summaries to its model provider. Use data permitted on that host and identify reserved/confirmation data. Existing permissions carry forward; Maiwen asks only when an action needs unresolved authorization. Installing it does not authorize new transmission. Unanswered questions stay visibly unresolved in the workspace notes.
+Use `learn-patterns` (Claude Code: `/maiwen:learn-patterns`):
 
-For demanding autonomous discovery, choose a capable model available in your host and raise reasoning effort when complexity warrants the extra time and usage. Maiwen inherits that choice. When the host supports it within your authorized budget, a different model family can add a perspective to critique; it does not guarantee independence of scientific errors. Notes record visible settings, not inferred routing.
+> Learn useful ways of forming research questions and hypotheses from the papers in `/absolute/papers/path`. Have an independent agent review the sources and transfer conditions. Save a portable English bank in `paperbanks/my-field`.
 
-## What to expect and how to intervene
+You can instead name a field and ask the host to find instructive papers. During discovery, Maiwen coordinates this work automatically. Reuse supported, reviewed material and check its applicability to the next dataset.
 
-The session inspects the data and prior science, learns useful question-forming moves from papers, proposes different directions, then checks and revises the strongest ones. The main result is `research/<dataset>/recommendations.md`, linked to data checks, paper notes, precedents and critique. Supported questions include a concrete analysis plan. Conditional ideas clearly name the missing evidence; an empty supported list is possible.
+## Read and continue
 
-Intervene in normal chat: “focus on prediction,” “this code means no response,” “we have already studied that,” or “spend the remaining time resolving this concern.” To continue later, ask a new session to use Maiwen and read the workspace brief, recommendations and `NEXT.md`. Notes preserve evidence; they do not automatically recreate every prior conversation.
+Open `research/<dataset>/README.md`, then `recommendations.md`. The index links all preparation, candidate development, checks and reviews; `NEXT.md` gives the actual stopping point. See [Reading results](docs/READING-RESULTS.md).
 
-Before handing notes to others, review their contents for private information. Raw data and PDFs stay in your own workspace. Maiwen plans research; executing the resulting full study is a separate task.
+To continue in a fresh session:
+
+> Read `research/<dataset>/README.md`, `brief.md` and `NEXT.md`. Summarize the unresolved decisions and continue the authorized work within the remaining budget.
+
+## Update or remove
+
+For a local marketplace, put the new reviewed package at the registered source location. In Codex, remove and reinstall `maiwen@maiwen` to refresh its cached payload. In Claude Code, use `claude plugin update maiwen@maiwen`. Start a fresh session and verify the version; if a host retains an old local snapshot, remove/reinstall the plugin from the new directory. Removing the marketplace registration is a separate host action.
+
+Uninstall with `codex plugin remove maiwen@maiwen` or `claude plugin uninstall maiwen@maiwen`. These are plugin-management actions; do not delete your research directory.
+
+## Optional data readers
+
+The bundled structural profiler needs Python 3.11 or later. CSV/TSV and JSON use the standard library. Parquet needs `pyarrow`; HDF5/NWB needs `h5py`. Local Zarr metadata inspection uses the standard library; reading Zarr array values may require additional tools. Install only the reader your data require in your chosen Python environment. The host can also write a suitable inspection script. There is no `pip install maiwen` step.
+
+See [Support](SUPPORT.md) for troubleshooting and [Data and privacy](PRIVACY.md) before using private research material.

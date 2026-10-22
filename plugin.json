@@ -1,11 +1,37 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "maiwen",
-  "version": "0.1.0-rc.18",
+  "version": "0.2.0-beta.1",
   "description": "Develop worthwhile, dataset-answerable research questions inside a coding-agent host.",
   "extensions": {
     "com.openai": {
-      "requires_local_executor": true
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "Maiwen",
+        "shortDescription": "Find worthwhile research questions your dataset can answer.",
+        "longDescription": "Develop research questions through reviewed field knowledge, reusable question patterns, dataset investigation and independent planning.",
+        "developerName": "Yunlong Xu",
+        "category": "Education & Research",
+        "websiteURL": "https://github.com/BeibaiDraco/maiwen",
+        "privacyPolicyURL": "https://github.com/BeibaiDraco/maiwen/blob/main/PRIVACY.md",
+        "defaultPrompt": [
+          "Use Maiwen to find worthwhile questions this dataset can answer.",
+          "Use Maiwen to learn reusable question patterns from these papers."
+        ],
+        "brandColor": "#123d46"
+      }
     }
-  }
+  },
+  "author": {
+    "name": "Yunlong Xu"
+  },
+  "homepage": "https://github.com/BeibaiDraco/maiwen",
+  "repository": "https://github.com/BeibaiDraco/maiwen",
+  "license": "Apache-2.0",
+  "keywords": [
+    "science",
+    "research",
+    "questions",
+    "planning"
+  ]
 }

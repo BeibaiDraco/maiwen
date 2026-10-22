@@ -1,42 +1,69 @@
+<p align="center"><img src="assets/maiwen.svg" width="88" alt="Maiwen"></p>
+
 # Maiwen
 
-Turn a dataset into scientifically worthwhile questions and concrete research plans, inside Codex or Claude Code.
+**Find worthwhile research questions your dataset can answer.**
 
-Start with the data. Add a research direction or local papers if you have them. Maiwen explores relevant experiments and theory, learns useful ways of asking questions from papers, and develops the opportunities your data can support.
+Maiwen is a scientific question-development plugin for Codex and Claude Code. Give it a dataset, with a broad direction or no direction at all. It studies the field, learns ways of asking questions from good papers, inspects the actual data, and develops promising ideas into precise research plans with independent review.
 
-## Start a research session
+[Install](QUICKSTART.md) · [See an example](examples/README.md) · [Understand the method](WORKFLOW.md)
 
-Install the package using the [quickstart](QUICKSTART.md), then open your research folder in your coding-agent host and ask:
+> **Research preview · 0.2.0-beta.1 candidate.** This package is prepared for review; publication is pending. It develops research plans. Scientific judgment and the evidence behind each question remain essential.
 
-> Use Maiwen to find scientifically worthwhile questions this dataset can answer: `/absolute/data/path`.
+## Start with the data
 
-You can add a direction, a paper folder, known related work, or a time budget. Maiwen checks what is available and asks for consequential missing information. A direction and papers are optional. Research reports follow your preferred language.
+Install the complete plugin from a downloaded checkout using the [quickstart](QUICKSTART.md), then ask:
 
-Maiwen uses your host's tools, model settings, permissions and account. It does not require a separate model service. Python 3.11+ runs the optional data profiler; additional readers are needed only for the formats you use.
+> Use Maiwen to find worthwhile questions this dataset can answer: `/absolute/data/path`. I have no seed question. Start by checking the inputs and agreeing on a research budget.
 
-## How the work develops
+A direction, local PDFs, known prior work and an existing question-pattern bank are optional. Maiwen identifies what it can inspect itself and asks for consequential facts only you can supply. You can steer, pause or resume the work in the host's ordinary conversation.
 
-1. **Understand the data and existing science.** Inspect measurements and coverage, map the dataset's previous uses, and explore open questions and competing explanations across connected fields.
-2. **Learn and propose.** Follow useful reasoning from experimental and theoretical papers, form distinct candidate questions, and connect them to concrete comparisons in the data.
-3. **Develop and review.** Check the scientific contribution, measurements and inferential assumptions. Independent host-native review challenges consequential claims and checks repairs within a bounded budget.
-4. **Deliver an actionable plan.** Explain each supported question, why it matters, the proposed computation and what different answers would mean.
+## What you get
 
-The number of recommendations follows the evidence. There is no fixed question quota. Promising ideas that need more support remain visible alongside the strongest plans.
+A readable dossier explains **what each question asks, why an answer matters, what the data support, and how to perform the proposed computation**. It links to the field account, detailed paper notes, data checks, candidate history and independent reviews. All saved research documents are English.
 
-## Your research workspace
+The [IBL example](examples/ibl-conditional-question.md) shows a real conditional lead and the measurement problem that prevented a stronger recommendation. The [small walkthrough](examples/walkthrough.md) illustrates how to read a question, its calculation and its stopping point.
 
-The main deliverable is `research/<dataset>/recommendations.md`. Linked notes explain the data, field context, paper learning, candidate development and review. `NEXT.md` records practical continuation steps. You can steer the work in ordinary conversation or continue from those notes in a later session.
+## How the work fits together
 
-Maiwen's default task is research planning. It inspects authorized data for measurement, distribution and coverage checks and uses appropriate synthetic checks. Running the proposed target analysis is a separate task. Identify reserved data and use only material permitted on your host.
+```mermaid
+flowchart LR
+    A[Dataset and optional direction] --> B[Field knowledge]
+    A --> C[Question patterns from papers]
+    A --> D[Dataset facts and prior uses]
+    B --> E[Independent knowledge reviews]
+    C --> E
+    D --> E
+    E --> F[Broad question generation]
+    F --> G[Screen and investigate]
+    G --> H[Develop each promising question]
+    H --> I[Independent review and bounded repair]
+    I --> J[Readable plans and evidence]
+```
 
-## Included skills
+The host supplies the model, tools, permissions and native subagents. Maiwen supplies scientific responsibilities, evidence standards and readable handoffs. There is no separate model service to configure. Better host capabilities can support the work directly; scientific quality still needs to be checked.
 
-- **discover** coordinates scientific question development and delivery.
-- **dataset-card** builds broad data understanding and investigates candidate-specific support.
-- **prior-use** maps existing uses and close precedents, including equivalent questions under different terminology.
+The complete workflow uses independent contexts for knowledge review and question planning. It permits a small additional generation batch when failures reveal a new opportunity, within the original budget. It can also stop. There is no quota of successful questions. See [the complete workflow](WORKFLOW.md) and [how to read the results](docs/READING-RESULTS.md).
 
-The pack includes a small structural profiler and a fictional worked writing example. The [quickstart](QUICKSTART.md) covers installation, input preparation, model settings and continuation.
+## Four skills, one complete workflow
 
-## Availability
+| Skill | Use it for |
+| --- | --- |
+| `discover` | The coordinated question-development workflow |
+| `learn-patterns` | A portable, reviewed library of question-forming and hypothesis-forming moves from papers |
+| `dataset-card` | Broad data reconnaissance and targeted measurement/coverage checks |
+| `prior-use` | What these data have already answered, and the closest conceptual precedents |
 
-This repository currently holds a private preview. The method is being evaluated on real datasets; its effect on question quality remains under development. Public availability and licensing will be announced with the first public release.
+You can bring your own PDFs or let the host find studies. A reviewed pattern bank can travel between projects. It complements current field research and dataset investigation; it does not replace either.
+
+## Status and scope
+
+Local Codex and Claude Code with native subagents are the intended hosts. Read the [validation and limitations](docs/LIMITATIONS.md) for the tested scope. Account limits, model access, local permissions and available literature tools belong to your host. This package does not provide extra inference credits.
+
+Planning can include authorized structure, coverage, marginal distributions and synthetic checks. Running a candidate's real target analysis is a separate request. A conditional plan is useful work, but it is not an established finding or a promise of a publishable result.
+
+## From Maieusis to Maiwen
+
+**[Maieusis](https://github.com/BeibaiDraco/maieusis) is Maiwen's predecessor.** It developed the central idea of learning how strong papers form questions and testing those questions against real datasets. Maiwen carries that scientific purpose into a portable host-native workflow. The history and design choices are explained in [Method and lineage](docs/METHOD.md).
+
+[Support](SUPPORT.md) · [Data and privacy](PRIVACY.md) · [Citation](CITATION.cff) · [License](LICENSE)

@@ -5,7 +5,7 @@ description: Discover research opportunities by building a broad, source-backed 
 
 # Discover what the data make possible
 
-Create `research/<dataset>/card.md` in the user's project. Read [the card guide](references/card-template.md) and retain scripts and outputs in `card_checks/` so another researcher can inspect the evidence.
+Write all saved notes, check explanations and summaries in English. Use the coordinator's assigned location; for new work, default to `research/<dataset>/knowledge/dataset/card.md` with checks in the adjacent `checks/` directory. When continuing older work, link the existing card from the current workspace index rather than silently creating a competing version or rewriting frozen records. Read [the card guide](references/card-template.md) and retain scripts, inputs and outputs so another researcher can inspect the evidence.
 
 ## First pass: build breadth before choosing questions
 
@@ -13,7 +13,7 @@ Create `research/<dataset>/card.md` in the user's project. Read [the card guide]
 2. Map the collection purpose, measured variables, independent and repeated units, assigned conditions, timing, modalities and joint measurements. Open a small representative sample of the needed format before relying on it. Use `scripts/profile.py` for supported formats and reviewed dataset-local readers for other authorized summaries; resolve dependencies only for the modalities currently needed.
 3. Inspect representative coverage across design conditions, units and modalities. Within authorized planning data, summarize counts, missingness, ranges and distributions, including behavioral responses. Record the denominator and inspected scope for each summary.
 4. Build a design-dissociation table from the collection design: meaningful distinctions, what separates them, available observations, and unresolved alternatives. Start from the design and measurements even when there is no candidate; use [the probe guide](references/generic-probes.md) to choose useful checks.
-5. Describe unusual research opportunities: rare combinations of measurements, repeated observations, natural contrasts, timing or coverage. Explain what kinds of questions each could support and the evidence still needed. Mark unknowns and continue forming provisional candidates.
+5. Describe unusual research opportunities: rare combinations of measurements, repeated observations, natural contrasts, timing or coverage. Explain what kinds of questions each could support and the evidence still needed. Record early ideas separately; formal generation receives this broad account alongside reviewed field knowledge and question patterns.
 6. Resolve remaining owner-only facts with a few [targeted questions](references/owner-interview.md). Save the broad card before committing to one direction.
 
 ## Second pass: deepen around candidates
