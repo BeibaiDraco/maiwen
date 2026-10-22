@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0-beta.3 — installation prompt and listing assets
+
+- Put a copyable installation request near the top of the homepage and in the quickstart, alongside direct installation commands.
+- Explain that installation is available through GitHub independently of official directory listings.
+- Register the existing blue mark as a 512-pixel PNG listing/composer icon and shorten the OpenAI listing subtitle to its 30-character limit.
+- Provide a separate OpenAI upload ZIP containing the same plugin files without GitHub marketplace catalogs. The complete ZIP retains those catalogs for local installation.
+
+The research workflow and expanded IBL example are unchanged. Earlier tags and archives remain fixed.
+
 ## 0.2.0-beta.2 — expanded scientific example
 
 - Include the expanded IBL example: scientific motivation, closest studies, paired recording design, proposed computations, five possible outcomes and the checks that shaped the plan.
