@@ -10,11 +10,29 @@ Maiwen helps develop those questions inside Codex or Claude Code. It studies the
 
 [Install](QUICKSTART.md) · [Read an example](examples/README.md) · [Explore the workflow](WORKFLOW.md)
 
-> **Research preview · 0.2.0-beta.2.** [Get started](QUICKSTART.md) · [Validation and limitations](docs/LIMITATIONS.md)
+> **Research preview · 0.2.0-beta.3.** [Get started](QUICKSTART.md) · [Validation and limitations](docs/LIMITATIONS.md)
+
+## Install with your agent
+
+Open a local Codex or Claude Code session and paste:
+
+```text
+Install Maiwen from https://github.com/BeibaiDraco/maiwen
+for the host I am using (Codex or Claude Code).
+
+Read QUICKSTART.md and install the current research-preview release.
+Verify the installed version and the availability of:
+discover, learn-patterns, dataset-card, and prior-use.
+
+Tell me whether I need to reload plugins or start a new session.
+If a manual step is needed, walk me through it.
+```
+
+Installation is available directly from GitHub and does not depend on an official directory listing. The [quickstart](QUICKSTART.md#install-the-complete-plugin) also provides terminal commands and instructions for a downloaded copy.
 
 ## Start with your data
 
-Install the plugin using the [quickstart](QUICKSTART.md), then ask:
+After installation, open your research workspace and ask:
 
 > Use Maiwen to find worthwhile questions this dataset can answer: `/absolute/data/path`. I have no seed question. Start by checking the inputs and agreeing on a research budget.
 

@@ -4,6 +4,26 @@ Use Codex or Claude Code with local file/code tools and native subagents. Sign i
 
 ## Install the complete plugin
 
+### Ask your agent
+
+In a local Codex or Claude Code session, paste this installation request:
+
+```text
+Install Maiwen from https://github.com/BeibaiDraco/maiwen
+for the host I am using (Codex or Claude Code).
+
+Read QUICKSTART.md and install the current research-preview release.
+Verify the installed version and the availability of:
+discover, learn-patterns, dataset-card, and prior-use.
+
+Tell me whether I need to reload plugins or start a new session.
+If a manual step is needed, walk me through it.
+```
+
+The host can carry out the supported installation steps or guide you through any manual step. Follow its reload or new-session instructions, then confirm the installed version and four skills. The direct commands below are also available if you prefer to run them yourself.
+
+### Use the command line
+
 Add Maiwen's GitHub marketplace, then install the complete plugin.
 
 **Codex CLI**
@@ -22,11 +42,11 @@ claude plugin install maiwen@maiwen
 
 In an interactive Claude Code session, use `/plugin marketplace add BeibaiDraco/maiwen`, then `/plugin install maiwen@maiwen` and choose the installation scope in the plugin panel.
 
-Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.2`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the installation checks performed and the host configurations tested. Official directory listings are separate from this GitHub marketplace.
+Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.3`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the installation checks performed and the host configurations tested. Official directory listings are separate from this GitHub marketplace.
 
 ### Install a downloaded copy
 
-You can also use a local checkout or an extracted release ZIP. Keep the directory in a stable location, such as `plugins/maiwen`; it must contain `plugin.json` and `skills/`. Replace the source in the first command with its absolute path:
+You can also use a local checkout or the complete `maiwen-0.2.0-beta.3.zip` from the [release page](https://github.com/BeibaiDraco/maiwen/releases/tag/v0.2.0-beta.3). Extract the ZIP first. The separate `-openai.zip` is for directory upload, not local marketplace registration. Keep the directory in a stable location, such as `plugins/maiwen`; it must contain `plugin.json` and `skills/`. Replace the source in the first command with its absolute path:
 
 ```bash
 # Codex
