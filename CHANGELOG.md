@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0-beta.2 — expanded scientific example
+
+- Include the expanded IBL example: scientific motivation, closest studies, paired recording design, proposed computations, five possible outcomes and the checks that shaped the plan.
+- Update the examples index and homepage to help readers find the scientific explanation.
+- Synchronize the host manifests, citation version and installation guide at 0.2.0-beta.2 for directory submission.
+
+The scientific workflow is unchanged. This release adds no new discovery or neural analysis; the IBL proposal remains a conditional example from alpha.3. The beta.1 tag and archive remain available unchanged.
+
 ## 0.2.0-beta.1 — research preview
 
 - Refine the homepage, guides, examples and research-writing instructions for scientific readers; use a blue palette for the mark and plugin theme.
