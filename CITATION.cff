@@ -6,6 +6,8 @@ authors:
   - family-names: Xu
     given-names: Yunlong
     orcid: "https://orcid.org/0000-0003-2589-7232"
+  - family-names: Doiron
+    given-names: Brent
 version: 0.2.0-beta.1
 abstract: "A host-native method for developing scientifically worthwhile, dataset-answerable research questions through reviewed field knowledge, reusable question patterns and dataset investigation."
 repository-code: "https://github.com/BeibaiDraco/maiwen"
