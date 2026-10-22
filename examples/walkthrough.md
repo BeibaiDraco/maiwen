@@ -1,6 +1,6 @@
 # A small question-development walkthrough
 
-**Fictional illustration.** All dataset details below are invented. This is a reading example, not a completed Maiwen run, a literature novelty claim or an empirical result.
+**Fictional illustration.** The invented study below shows how to explain a question, its calculation and its interpretation. It is not an output from a Maiwen run.
 
 ## The opportunity
 
@@ -14,7 +14,7 @@ This question combines three kinds of preparation. The field account explains wh
 
 **In the eligible donor population, is the average paired difference between B and A within the independently justified tolerance for the population-average calibration?**
 
-This asks about the average protocol difference in a defined population. It does not establish individual agreement or preservation of a between-group contrast. Equal and opposite group-specific shifts could cancel in the overall mean while changing the group contrast. Those uses require their own targets and comparisons.
+The target is the average protocol difference in a defined population. Individual discrepancies could remain large even if the average is small. Equal and opposite shifts in two groups could also cancel overall while changing the contrast between them. Assessing individual agreement or preserving group comparisons would therefore require different targets.
 
 ## Proposed computation
 
@@ -22,11 +22,11 @@ Let `d_i = B_i - A_i` for donor `i`, with one paired difference per independent 
 
 An equivalence analysis at a prespecified one-sided error level of 0.05 can use two one-sided tests, or the corresponding 90% confidence interval for the mean difference under the same model. The mean shift supports the equivalence claim only if that entire interval lies inside `(-delta, +delta)`. A paired t procedure additionally needs a defensible model for the donor differences; robustness and sample size must be checked for the actual setting. Multiple calibration populations or endpoints need their own planned error control. Failure to meet equivalence is not automatically evidence of a meaningful difference.
 
-No paired differences or target effects have been calculated in this illustration. Before analysis, the planner still needs the justified delta, adequate precision for it, a supported population/inclusion rule and an independently reviewed procedure.
+Before running the analysis, the planner would justify delta, assess whether the expected precision is useful, define the population and inclusion rule, and obtain independent review of the procedure. The illustration ends at that planning stage.
 
 ## What review changes
 
-An early proposal said “show that the protocols are interchangeable.” A reviewer observes that a small mean shift can coexist with large positive and negative individual discrepancies. The retained question becomes “average protocol difference in this defined population.” This is a change to the scientific claim, not a disclaimer appended to an unchanged conclusion.
+An early proposal said “show that the protocols are interchangeable.” A reviewer observes that a small mean shift can coexist with large positive and negative individual discrepancies. The retained question becomes “average protocol difference in this defined population.” The revision changes both the question and what the result would mean.
 
 The final disposition is conditional until the tolerance and precision are supported. If the intended use actually requires individual agreement, the planner must develop that different question and renew the relevant literature and data checks.
 

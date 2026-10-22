@@ -2,14 +2,14 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "maiwen",
   "version": "0.2.0-beta.1",
-  "description": "Develop worthwhile, dataset-answerable research questions inside a coding-agent host.",
+  "description": "Find worthwhile research questions and develop plans to answer them with your data.",
   "extensions": {
     "com.openai": {
       "requires_local_executor": true,
       "interface": {
         "displayName": "Maiwen",
         "shortDescription": "Find worthwhile research questions your dataset can answer.",
-        "longDescription": "Develop research questions through reviewed field knowledge, reusable question patterns, dataset investigation and independent planning.",
+        "longDescription": "Study the field, learn ways to ask questions from papers, and examine your data. Develop promising ideas into research plans with independent review.",
         "developerName": "Yunlong Xu",
         "category": "Education & Research",
         "websiteURL": "https://github.com/BeibaiDraco/maiwen",
@@ -18,7 +18,7 @@
           "Use Maiwen to find worthwhile questions this dataset can answer.",
           "Use Maiwen to learn reusable question patterns from these papers."
         ],
-        "brandColor": "#123d46"
+        "brandColor": "#153E75"
       }
     }
   },

@@ -1,6 +1,6 @@
 # Example: distinguish a group trend from change within a unit
 
-This is a fictional writing example, not a published study, a scientific source or a ready-to-use reviewed pattern. Real banks need independently checked primary sources. It illustrates how a readable case can support a transferable question-forming move.
+This fictional sensor study illustrates how to explain a case and derive a reusable way of asking questions. In a real library, the cases and the resulting pattern need independently checked primary sources.
 
 ## A case reconstructed from a hypothetical sensor study
 
@@ -14,7 +14,7 @@ Suppose the study reported a cross-sectional age difference but little within-se
 
 A hypothetical education study could face a similar ambiguity: older student cohorts score differently, but entry composition also differs. Following the same students helps distinguish within-student change from differences between cohorts. Attrition and changing tests would require their own treatment; sensor calibration cannot simply be renamed and assumed solved.
 
-Choose the operation by the ambiguity: repeated-unit differencing addresses within-unit change; a standardized between-cohort comparison addresses composition; neither by itself identifies a causal effect of time. The shared move is to ask which level of variation carries an apparent change. The scientific goal and source conditions differ. A real cross-case pattern would show that independently read studies actually support this structure and explain the differing assumptions, rather than infer support from these invented examples.
+Choose the operation by the ambiguity: repeated-unit differencing addresses within-unit change; a standardized between-cohort comparison addresses composition; neither by itself identifies a causal effect of time. The shared move is to ask which level of variation carries an apparent change. The scientific goal and source conditions differ. A pattern drawn from real studies would cite the comparisons that support this common structure and explain where their assumptions differ.
 
 ## Portable pattern prose
 
@@ -22,13 +22,13 @@ When an apparent trend mixes comparisons between units with change within units,
 
 The move needs repeatable unit identity, comparable measurements across observations and an account of selection, time-varying confounding and uncertainty. It does not automatically make time causal. If observations come from different units at each time, the within-unit question is not directly supported; another design or a different question is needed. If the same units are measured but the measurement system changes, repeated identity alone is insufficient.
 
-In a new dataset, the project note would first check identity and measurement comparability, leaving uncertain correspondence explicit. The questioner could then ask which scientific claim the decomposition would illuminate. A small table of repeat counts establishes availability, not whether the original trend is explained. That target comparison belongs to the later research analysis.
+In a new dataset, the project note would first check identity and measurement comparability, leaving uncertain correspondence explicit. The questioner could then ask which scientific claim the decomposition would illuminate. Repeat counts establish which within-unit comparisons are available. Determining whether those comparisons explain the original trend belongs to the later research analysis.
 
 
 ## Distinguish the question from a hypothesis
 
 The question can first be descriptive: how much does a sensor's offset change within the observed service interval, and how does that differ from the between-batch contrast? Its answer matters for interpreting the earlier survey even before an aging mechanism is proposed.
 
-A hypothesis-forming move uses the mismatch between cross-sectional and within-unit comparisons to propose different contributions: within-sensor change, persistent batch differences, or both. A pure batch account predicts no systematic within-sensor change under comparable measurement; an aging account predicts a change over a specified interval and exposure regime. These are conditional predictions, not facts about real sensors. Both contributions can coexist, and observed time-related change alone does not identify a causal effect of use.
+A hypothesis-forming move uses the mismatch between cross-sectional and within-unit comparisons to propose different contributions: within-sensor change, persistent batch differences, or both. A pure batch account predicts no systematic within-sensor change under comparable measurement; an aging account predicts a change over a specified interval and exposure regime. These predictions depend on the stated measurement and exposure conditions. Both contributions can coexist; identifying an effect of use would also require a design that separates use from other changes over time.
 
-The portable question move is to separate levels of variation. The linked hypothesis move is to explain a pooled pattern through components with different observable predictions. The reviewer checks both the decomposition's conditions and the inference made from it: even valid repeat identity and calibration cannot make a short interval establish the absence of slower change. A repair that adds those design details must not introduce that stronger conclusion.
+The portable question move is to separate levels of variation. The linked hypothesis move is to explain a pooled pattern through components with different observable predictions. The reviewer checks both the decomposition's conditions and the inference drawn from it. Valid repeat identity and calibration support a comparison over the observed interval; the possibility of slower change remains. Revisions should preserve that distinction.

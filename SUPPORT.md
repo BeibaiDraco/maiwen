@@ -1,16 +1,16 @@
 # Support
 
-Use [GitHub issues](https://github.com/BeibaiDraco/maiwen/issues) for reproducible installation problems, unclear instructions and scientific workflow defects once public access is available. During private review, send the maintainer a minimal report through the review channel you already use. There is no guaranteed response time.
+Report installation problems, unclear instructions and scientific workflow errors through [GitHub issues](https://github.com/BeibaiDraco/maiwen/issues) once the repository is public. During private review, use your existing channel with the maintainer. Responses depend on maintainer availability.
 
-Include the Maiwen version, host and version, operating system, command or request, expected behavior and a small reproduction. For scientific defects, identify the claim, its supporting source/check and the decision it affected. Useful criticism includes a counterexample or a corrected interpretation.
+A useful report gives the Maiwen version, host and version, operating system, request or command, expected behavior and a small example that reproduces the problem. For a scientific error, identify the claim, its source or calculation and the decision it affected. A counterexample or corrected interpretation is especially helpful.
 
-Do not include API keys, account tokens, private datasets, unpublished PDFs or unscreened host transcripts in a public issue. Share a synthetic fixture and redacted excerpt when possible. For a potentially sensitive report, first request a private reporting channel without posting the sensitive details.
+Use synthetic data and a redacted excerpt where possible. Keep API keys, account tokens, private datasets, unpublished PDFs and unreviewed transcripts out of public issues. For sensitive reports, first ask the maintainer for a private channel.
 
 ## Common starting problems
 
-- **No Maiwen skills:** verify the package root, marketplace registration and installed version. Start a fresh session after installation. Check for duplicate `maiwen-local` and `maiwen` installations.
-- **Only a partial report:** inspect `README.md` and `NEXT.md` for missing sources, permissions, review capacity or exhausted budget. A bounded partial is not necessarily a software error.
-- **Data cannot be read:** check local paths, mount availability and the optional reader for the file format. Explain trusted-data handling and necessary permissions through the host.
-- **Subagents unavailable:** use a supported native session or retain the preparation and request independent review elsewhere. Do not treat a single agent's self-check as independent review.
+- **The host cannot find Maiwen's skills.** Check the package root, marketplace registration and installed version, then start a fresh session. Earlier previews used `maiwen-local`; remove a duplicate installation if both identities are present.
+- **The report stopped partway through.** Read `README.md` and `NEXT.md` for the missing source, data access, review or remaining budget. They should identify what can continue.
+- **The data cannot be read.** Check the path, mounted drive and optional reader for the file format. Resolve access restrictions through the host.
+- **Subagents are unavailable.** Continue in a host session that supports them, or save the preparation for independent review elsewhere. Label the review that remains to be done.
 
-See the [quickstart](QUICKSTART.md) for installation, migration, update and removal. Contributions should describe the failure they address and preserve the distinction between engineering validation and scientific quality.
+The [quickstart](QUICKSTART.md) covers installation, updates and removal. Contributions should explain the problem they address and include checks suited to the change.

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Maiwen mark: three paths meet in an open question">
-<rect width="160" height="160" rx="36" fill="#123d46"/>
-<g fill="none" stroke="#d9eecf" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M32 112V52L58 85L80 52L102 85L128 52V112"/><path d="M58 85L80 112L102 85"/></g>
-<circle cx="80" cy="133" r="5" fill="#edb76d"/>
+<rect width="160" height="160" rx="36" fill="#153E75"/>
+<g fill="none" stroke="#CBE3FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M32 112V52L58 85L80 52L102 85L128 52V112"/><path d="M58 85L80 112L102 85"/></g>
+<circle cx="80" cy="133" r="5" fill="#62B2FF"/>
 </svg>

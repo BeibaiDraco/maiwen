@@ -1,6 +1,6 @@
 ---
 name: learn-patterns
-description: Build, review, update or reuse a portable Markdown bank of question-forming methods for forming questions and hypotheses learned from scientific papers. Use with optional local PDFs, a paper collection, a field or an existing bank; a target dataset is not required.
+description: Learn reusable ways to form research questions and hypotheses from scientific papers. Build, review, update or reuse a portable Markdown library. Use with optional local PDFs, a paper collection, a field or an existing bank; a target dataset is not required.
 ---
 
 # Learn reusable ways to form questions and hypotheses
@@ -17,7 +17,7 @@ For a new bank, the author selects useful studies, writes source-backed cases an
 
 ## Reuse and update
 
-Read the bank's `README.md`, `question-patterns.md`, cases, source locators and review. Establish which actual revision the review covered, whether relevant sources remain inspectable and whether there are substantive changes or contradictions. An imported `review.md` alone does not establish validation. Have a separate context check reuse/applicability with the relevant source evidence; unchanged supported patterns need not be rebuilt or exhaustively re-reviewed. Reopen only affected patterns when their scientific conditions, evidence or meaning change.
+Read the bank's `README.md`, `question-patterns.md`, cases, source locators and review. Establish which actual revision the review covered, whether relevant sources remain inspectable and whether there are substantive changes or contradictions. Check that the imported review applies to the current claims and their supporting sources. Have a separate context check reuse/applicability with the relevant source evidence; unchanged supported patterns need not be rebuilt or exhaustively re-reviewed. Reopen only affected patterns when their scientific conditions, evidence or meaning change.
 
 Keep the bank portable: stable citations, relative case links, readable explanations, explicit scope, revision date/label, sources and limits. Preserve prior reviewed versions before substantive updates so existing projects retain the material they used. Do not overwrite another project's library or automatically publish private notes. Source PDFs can remain outside the bank; disclose unavailable sources rather than embedding or transmitting them implicitly.
 
@@ -25,4 +25,4 @@ Return a readable `README.md` linking the pattern guide, cases, `source-index.md
 
 ## Apply it to a dataset when requested
 
-Write the separate project note `research/<dataset>/knowledge/pattern-selection.md`. Link the exact bank revision and relevant patterns, explaining the scientific opportunity, required target-data correspondence and missing conditions. It must be usable before candidates exist; map patterns to data affordances, not preferred answers. Later, [paper learning in discovery](../discover/references/paper-learning.md) records which pattern actually opened or changed a candidate. General usefulness never establishes this dataset's novelty or answerability.
+Write the separate project note `research/<dataset>/knowledge/pattern-selection.md`. Link the exact bank revision and relevant patterns, explaining the scientific opportunity, required target-data correspondence and missing conditions. It must be usable before candidates exist; connect patterns to available measurements and designs while leaving the answers open. Later, [paper learning in discovery](../discover/references/paper-learning.md) records which pattern actually opened or changed a candidate. Assess each resulting question's contribution and answerability through the project's literature and data checks.

@@ -1,27 +1,27 @@
 # Reading Maiwen's results
 
-Start with `research/<dataset>/recommendations.md`. For each developed question, it should explain the unknown, its scientific stakes, the closest previous work, the actual measurements, the proposed calculation and the possible interpretations. You should be able to discuss the study without reconstructing it from chat messages.
+Start with `research/<dataset>/recommendations.md`. For each developed question, the report explains what is unknown, why it matters, what earlier work established and how the proposed calculation would answer it. You should be able to discuss the study with a colleague who has not followed the conversation.
 
-## Understand the disposition
+## What is ready, and what needs more work?
 
-| Disposition | What you have | Next action |
+| Outcome | Meaning | Useful next step |
 | --- | --- | --- |
-| Supported recommendation | A question whose value and answerability have supporting evidence and completed independent review at the stated scope | Read the plan and decide whether to authorize analysis |
-| Conditional direction | A worthwhile possibility with a consequential unresolved fact or method decision | Resolve the named condition before treating it as ready |
-| Review pending | Material work whose current version has not completed independent scrutiny | Complete the scoped review |
-| Deferred for capacity | An idea left undeveloped because time or review capacity ran out | Decide whether to allocate more work; this is not scientific rejection |
-| Rejected | A proposal with an evidence-backed reason not to continue in its present form | Read the reason and any clearly different remaining opportunity |
+| Supported recommendation | The question's contribution and answerability have supporting evidence, and the current plan has completed independent review | Assess the plan and decide whether to authorize analysis |
+| Conditional direction | A promising question depends on a named unresolved fact or method choice | Resolve that condition before beginning the study |
+| Review pending | The current version still needs independent review | Complete the indicated review |
+| Deferred for capacity | Time or review capacity ended before the idea could be developed | Decide whether it merits further work |
+| Rejected | Evidence gives a reason to stop pursuing the question in its present form | Read the reason and any different opportunity it leaves open |
 
-No fixed number must be recommended. If no question qualifies, the report should still give substantive knowledge, failed comparisons, untried opportunities and a useful stopping point. It may have used the single additional generation allowance; that does not guarantee success.
+A report may contain no supported recommendation. In that case, it should explain what was learned, why the investigated questions could not advance and which opportunities remain untested. It should also distinguish a demonstrated data constraint from a search that ended because time or evidence ran out.
 
-## Follow the evidence
+## Inspect how the question developed
 
-`README.md` is the project index. `brief.md` records the scope, inputs and budget. The `knowledge/` directory contains the field account, detailed paper notes, data card, dataset-source report, prior uses and pattern selection. `questioner-input.md` shows what the proposer received. A reusable bank may live separately under `paperbanks/`.
+The project `README.md` links the research documents; `brief.md` records the inputs, scope and budget. Under `knowledge/`, you can read the field overview, detailed paper notes, data card, collection history, previous analyses and selected question patterns. `questioner-input.md` identifies the material given to the questioner. A reusable pattern library may live separately under `paperbanks/`.
 
-`candidates.md` and `screening.md` explain how ideas entered or left consideration. Each `questions/<id>/` directory contains its development, plan, local checks and independent review. `final-review.md` checks the finished report; `NEXT.md` records remaining work and consumed repair allowances. The complete artifact table is in [WORKFLOW.md](../WORKFLOW.md).
+`candidates.md` and `screening.md` explain the proposed ideas and the decisions to pursue, combine, reject or defer them. Each `questions/<id>/` directory contains the question's development, plan, checks and independent review. `final-review.md` covers the finished report; `NEXT.md` records the stopping point and remaining work. The [workflow guide](../WORKFLOW.md#find-every-artifact) lists all outputs.
 
-Check the evidence closest to a claim. A source may support a method without validating its transfer. A row count may support availability without demonstrating useful precision. A synthetic counterexample can disprove an inference without estimating how often that failure occurs in real data. The report should preserve these differences in its scientific explanation.
+Follow the evidence beside the claim that interests you. A coverage check tells you which observations are available. A precision calculation asks whether they can resolve a difference of scientific interest. A synthetic counterexample shows why an inference can fail under particular conditions. Together, these records should explain why the final question has its particular form.
 
 ## Continue with a colleague or a new session
 
-Share the main report together with its linked plans and evidence, subject to your data and paper-sharing permissions. Ask a scientific colleague to assess the contribution and its assumptions. Ask the host to resume from the index, brief and NEXT rather than reconstructing prior work from memory. Existing data access and analysis permissions remain separate from a recommendation to proceed.
+Share the main report and its linked plans and evidence, within your data and paper-sharing permissions. A scientific colleague can then assess the contribution, measurements and assumptions. To resume with an agent, ask it to read the index, brief and `NEXT.md` and continue the unresolved work within the remaining budget. Authorize the proposed analysis separately when you are ready to run it.
