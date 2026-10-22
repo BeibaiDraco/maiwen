@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0-beta.1 — candidate, not yet released
+## 0.2.0-beta.1 — research preview
 
 - Refine the homepage, guides, examples and research-writing instructions for scientific readers; use a blue palette for the mark and plugin theme.
 - Package the four-skill workflow with an installation guide, method explanation, result-reading guide, examples, support and privacy information.

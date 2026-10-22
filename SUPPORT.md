@@ -1,6 +1,6 @@
 # Support
 
-Report installation problems, unclear instructions and scientific workflow errors through [GitHub issues](https://github.com/BeibaiDraco/maiwen/issues) once the repository is public. During private review, use your existing channel with the maintainer. Responses depend on maintainer availability.
+Report installation problems, unclear instructions and scientific workflow errors through [GitHub issues](https://github.com/BeibaiDraco/maiwen/issues). Responses depend on maintainer availability.
 
 A useful report gives the Maiwen version, host and version, operating system, request or command, expected behavior and a small example that reproduces the problem. For a scientific error, identify the claim, its source or calculation and the decision it affected. A counterexample or corrected interpretation is especially helpful.
 

@@ -4,25 +4,39 @@ Use Codex or Claude Code with local file/code tools and native subagents. Sign i
 
 ## Install the complete plugin
 
-This review candidate is installed from a local checkout or an extracted ZIP. Keep the directory in a stable location, such as a `plugins/maiwen` folder. Replace the example path with that directory; it must contain `plugin.json` and `skills/`.
+Add Maiwen's GitHub marketplace, then install the complete plugin.
 
 **Codex CLI**
 
 ```bash
-codex plugin marketplace add /absolute/path/to/maiwen
+codex plugin marketplace add BeibaiDraco/maiwen
 codex plugin add maiwen@maiwen
 ```
 
 **Claude Code CLI**
 
 ```bash
-claude plugin marketplace add /absolute/path/to/maiwen
+claude plugin marketplace add BeibaiDraco/maiwen
 claude plugin install maiwen@maiwen
 ```
 
-In an interactive Claude Code session, the equivalent commands are `/plugin marketplace add /absolute/path/to/maiwen` and `/plugin install maiwen@maiwen`.
+In an interactive Claude Code session, use `/plugin marketplace add BeibaiDraco/maiwen`, then `/plugin install maiwen@maiwen` and choose the installation scope in the plugin panel.
 
-Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.1`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the tested CLI configurations and the App checks still to do. Public GitHub installation and official directory listing are pending.
+Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.1`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the installation checks performed and the host configurations tested. Official directory listings are separate from this GitHub marketplace.
+
+### Install a downloaded copy
+
+You can also use a local checkout or an extracted release ZIP. Keep the directory in a stable location, such as `plugins/maiwen`; it must contain `plugin.json` and `skills/`. Replace the source in the first command with its absolute path:
+
+```bash
+# Codex
+codex plugin marketplace add /absolute/path/to/maiwen
+codex plugin add maiwen@maiwen
+
+# Claude Code
+claude plugin marketplace add /absolute/path/to/maiwen
+claude plugin install maiwen@maiwen
+```
 
 ### Existing private-preview users
 

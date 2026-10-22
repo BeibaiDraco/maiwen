@@ -10,7 +10,7 @@ Maiwen helps develop those questions inside Codex or Claude Code. It studies the
 
 [Install](QUICKSTART.md) · [Read an example](examples/README.md) · [Explore the workflow](WORKFLOW.md)
 
-> **Research preview · 0.2.0-beta.1.** This candidate is available for private review. Public release is pending.
+> **Research preview · 0.2.0-beta.1.** [Get started](QUICKSTART.md) · [Validation and limitations](docs/LIMITATIONS.md)
 
 ## Start with your data
 
