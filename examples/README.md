@@ -1,6 +1,6 @@
 # Examples
 
-- [A real IBL conditional question](ibl-conditional-question.md): an edited scientific account from an alpha.3 discovery. It shows the question, closest work, available data, review-driven correction and unresolved computation. It is not a beta result or an analysis-ready recommendation.
-- [Reading a small question-development walkthrough](walkthrough.md): fictional measurement data, explaining the connection between a question, proposed computation and interpretation. No model run or empirical validation is claimed.
+- [A question about IBL neural timescales](ibl-conditional-question.md) follows a real alpha.3 proposal from its scientific motivation to the measurement difficulty that left it conditional. It includes prior work, available data and the correction prompted by review.
+- [A measurement-protocol walkthrough](walkthrough.md) uses fictional data to show how a broad idea becomes a precise question, calculation and interpretation.
 
-The [workflow guide](../WORKFLOW.md) maps the full intermediate artifacts, including field knowledge, paper patterns and dataset evidence. These compact examples show selected parts of that output; they are not substitutes for the substantive three-source preparation in a real project. Source PDFs, private datasets and development transcripts are not bundled.
+These accounts illustrate selected parts of the output. For the field overview, paper-pattern library, dataset account and other research documents produced in a full project, see the [workflow guide](../WORKFLOW.md#find-every-artifact).

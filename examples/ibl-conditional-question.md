@@ -1,6 +1,6 @@
 # IBL: does temporal persistence carry from spontaneous activity into behavior?
 
-**Historical conditional direction, not an analysis-ready recommendation.** This is an edited account of a Codex discovery using Maiwen `0.2.0-alpha.3`. It preserves the scientific stopping point. The original run inspected a bounded 36-session IBL planning view, not the whole release. The beta candidate did not regenerate or validate this question.
+**A conditional question from the alpha.3 trial.** This account follows a Codex discovery using a 36-session planning view of IBL data. The question remained conditional because its proposed measurement and interpretation needed further work. It is included here as a historical example; beta.1 has not rerun it.
 
 ## Why ask it?
 
@@ -12,13 +12,13 @@ The question was: **do the same sorted unit identities retain their relative lon
 
 [Shi and colleagues' BWM study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12407892/) estimates spontaneous persistence, including mixtures of decay components, and relates it to task selectivity. [Fontanier and colleagues](https://elifesciences.org/articles/63795) already examine engagement and pause timescales in the same neurons using a different spike-pair statistic. Thus, a generic claim that timescales differ between rest and task would be insufficient.
 
-The possible contribution is the matched measurement and portability comparison in this IBL setting. The original run also checked adjacent timescale literature and a recent IBL micropublication; exact code overlap remained unaudited. This short example is not an exhaustive novelty review. Any new continuation must reopen the closest work and its current code before asserting a remaining gap.
+The possible contribution is a comparison of matched measurements across recording contexts in IBL. The original run also examined adjacent timescale literature and a recent IBL micropublication. It left overlap with existing code unresolved, so continuation would begin by checking the closest studies and their current implementations.
 
 ## What was actually available?
 
-In the authorized view, 27 sessions had explicit spontaneous-interval labels. Twenty-four had at least 600 seconds of marked spontaneous time, spanning 36 insertions and 3,977 potential sorted-unit identities. These are structural availability counts. They do not certify continuous acquisition, stable biological cells or reliable timescale estimates.
+In the authorized view, 27 sessions had explicit spontaneous-interval labels. Twenty-four had at least 600 seconds of marked spontaneous time, spanning 36 insertions and 3,977 potential sorted-unit identities. These counts identify potentially usable recordings. Continuous acquisition, stable cell identity and the precision of timescale estimates still needed investigation.
 
-The proposed comparison used the final 600 seconds of task and the first 600 seconds of the marked spontaneous block, split into two 300-second records per context. Task always preceded spontaneous recording. Time, satiety and recording drift therefore remained alternative explanations for a context difference. This was a descriptive portability question, not an identified effect of engagement on intrinsic dynamics.
+The proposed comparison used the final 600 seconds of task and the first 600 seconds of the marked spontaneous block, split into two 300-second records per context. Task always preceded spontaneous recording. Time, satiety and recording drift therefore remained alternative explanations for a context difference. The comparison could describe how measurements carry between these recording periods. Attributing a difference to engagement would require separating engagement from those other changes.
 
 ## The calculation and the decisive difficulty
 
@@ -26,12 +26,12 @@ The plan specified count covariance at matched binning and lag support, normaliz
 
 Choosing a scalar summary was consequential. A short-lag area was proposed as an easier substitute for a long-timescale mixture fit. Executed synthetic counterexamples showed that shortening the lag range could reverse unit ordering even without noise. Added task drive could also reverse raw ordering without changing latent persistence. A separate counterexample showed that perfect repeat agreement could coexist with wrong estimates when errors were shared.
 
-These checks blocked the argument that an easy scalar plus high repeat correlation would establish portability. They did not demonstrate that the dataset was useless. They established that the measurement, reliability model and scientific interpretation had to be chosen together.
+The checks showed why an easy scalar and high repeat correlation were insufficient for the proposed portability claim. Further development would have to choose the measurement, reliability model and interpretation together.
 
 ## The retained handoff
 
 The next planning step was to define one common scalar, fit/eligibility procedure, comparison functional and scientifically useful tolerance, then test the complete procedure on synthetic spikes with mixtures, variable rates, drive, drift and fit failures. The plan also needed acquisition and unit-stability evidence. No local persistence target effect was estimated.
 
-The useful output was a precise conditional question and the evidence deciding whether it could become an executable study. It did not yet satisfy the standard for a supported final recommendation. That distinction is part of the example's scientific meaning.
+The investigation produced a precise conditional question and identified the measurements and method decisions needed to turn it into a study. Those unresolved decisions are its stopping point.
 
-**Provenance:** curated from the frozen alpha.3 Codex `recommendations.md`, the persistence plan/development record and its independent review in the private development archive. Those originals remain unchanged. Public readers can inspect the source literature above, but this condensed example is not a public reproducibility bundle for the private trial's checks or counts.
+**Source record:** adapted from the alpha.3 Codex report, persistence plan, development notes and independent review. The original records and local checks are preserved in the private development archive. The linked papers are public; the trial's scripts and inspection outputs are not included in this example.

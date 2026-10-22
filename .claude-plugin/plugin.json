@@ -1,7 +1,7 @@
 {
   "name": "maiwen",
   "version": "0.2.0-beta.1",
-  "description": "Develop worthwhile, dataset-answerable research questions inside the host.",
+  "description": "Find worthwhile research questions and develop plans to answer them with your data.",
   "author": {
     "name": "Yunlong Xu"
   },

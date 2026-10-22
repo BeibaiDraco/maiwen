@@ -1,10 +1,10 @@
 # Connect a scientific question to an answerable comparison
 
-State the quantity or relationship in ordinary language: what differs, in which population, at which unit and time, under which comparison? Distinguish a description of these records from inference about a process or population. Explain what a useful positive, negative or inconclusive answer would change. Choose a measurement and estimator for that scientific object, rather than naming a scientific object after an available statistic.
+State the quantity or relationship in ordinary language: what differs, between which observations, in which population and over what time or conditions? Distinguish a description of these records from inference about a process or population. Explain what a useful positive, negative or inconclusive answer would change. Choose a measurement and estimator that represent the quantity the question asks about.
 
 ## Find the deciding uncertainty
 
-Before extensive modeling, identify and perform the affordable check most likely to change further investment. It may be a closest-source comparison, measurement definition, actual local trigger, joint coverage or logical equivalence. If evidence cannot be obtained, state which portion remains conditional and return the allocation decision to the coordinator. Existing authorized checks need no new permission; an environmental denial cannot be bypassed.
+Before extensive modeling, perform the affordable check most likely to change the decision to pursue the question. It may be a comparison with the closest study, a measurement definition, a data feature the question depends on, joint coverage or an equivalence between proposed explanations. If evidence cannot be obtained, state which portion remains conditional and return the allocation decision to the coordinator. Existing authorized checks need no new permission; an environmental denial cannot be bypassed.
 
 | Aim | Deciding connection to establish |
 | --- | --- |
@@ -14,11 +14,11 @@ Before extensive modeling, identify and perform the affordable check most likely
 | Distinguish explanations | Observation models and identifying variation separate the stated alternatives. Test equivalence before calibrating a model winner. |
 | Estimate a causal effect | The identification strategy, support, temporal order and assumptions connect this contrast to the effect. An intervention is one possible design. |
 
-Inspect joint support at the units, conditions and windows the actual design needs, including nuisance strata and nested train/tune/evaluation splits when relevant. Marginal cells, shared keys or full rank do not establish that support or precision. Use [operational definitions](../../dataset-card/references/operational-definitions.md) for measurement, joins and release semantics. A change of population, measurement or estimator is a scientific revision with renewed value/source/data checks.
+Inspect joint support at the units, conditions and windows the actual design needs, including nuisance strata and nested train/tune/evaluation splits when relevant. Marginal cells, shared keys or full rank do not establish that support or precision. Use [operational definitions](../../dataset-card/references/operational-definitions.md) for measurement, joins and release semantics. A change of population, measurement or estimator can change what the study estimates or concludes. Recheck the affected contribution, prior work and data requirements.
 
 ## Challenge the whole inference
 
-Follow records through eligibility, transformations, aggregation/weights, learning, uncertainty and the final interpretation. Derive a claimed cancellation on the actual observation/link scales. Check whether heterogeneous units, unequal weights or selection can create the claimed pattern even when the within-unit relation says otherwise. For a time- or subgroup-specific claim, establish that the statistic localizes it. Do not infer absence, independence or a mechanism merely from failure of selected models or tests.
+Follow records through eligibility, transformations, aggregation, weighting, fitting, uncertainty and interpretation. If a method is claimed to remove a nuisance contribution, derive that result using the actual observation scale and any link function. Check whether heterogeneous units, unequal weights or selection can create the claimed pattern even when the within-unit relation says otherwise. For a time- or subgroup-specific claim, establish that the statistic localizes it. Do not infer absence, independence or a mechanism merely from failure of selected models or tests.
 
 When a conclusion selects or combines several comparisons, the planner defines the comparison family, selection/combination rule and intended claim; the reviewer checks uncertainty for that actual rule. Distinguish component-wise statements from a joint or selected conclusion. A finite descriptive vector does not automatically require an inferential correction.
 
@@ -32,4 +32,4 @@ Examine plausible heterogeneity and misspecification as well as intended behavio
 
 ## Return the supported scope
 
-Recommend when scientific value and answerability are supported at the stated scope, with justified assumptions and no unchecked necessary fact that could overturn them. Otherwise preserve the useful portion and name the exact missing evidence or scientific choice. An honest conditional sketch can guide further work; it is not a qualified study. A failed mechanism interpretation can leave a worthwhile descriptive or predictive question, which needs its own clear value argument.
+Recommend when scientific value and answerability are supported at the stated scope, with justified assumptions and no unchecked necessary fact that could overturn them. Otherwise preserve the useful portion and name the exact missing evidence or scientific choice. A conditional plan should identify the next step needed to assess the study. A failed mechanism interpretation can leave a worthwhile descriptive or predictive question, which needs its own clear value argument.

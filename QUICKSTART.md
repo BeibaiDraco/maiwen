@@ -22,7 +22,7 @@ claude plugin install maiwen@maiwen
 
 In an interactive Claude Code session, the equivalent commands are `/plugin marketplace add /absolute/path/to/maiwen` and `/plugin install maiwen@maiwen`.
 
-Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.1`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. Native CLI loading and a complete desktop App workflow are separate checks; see [validation scope](docs/LIMITATIONS.md). Official directory listing is pending. Once a public repository is approved, GitHub installation instructions will be added and verified against that exact source.
+Start a fresh session in your research workspace. Ask the host to list Maiwen's skills and confirm version `0.2.0-beta.1`: `discover`, `learn-patterns`, `dataset-card` and `prior-use`. The [validation record](docs/LIMITATIONS.md) describes the tested CLI configurations and the App checks still to do. Public GitHub installation and official directory listing are pending.
 
 ### Existing private-preview users
 
@@ -43,15 +43,15 @@ In Codex, ask the host to use Maiwen `discover`. In Claude Code, invoke `/maiwen
 
 > Find scientifically worthwhile questions this dataset can answer: `/absolute/data/path`. I have no seed question. First check the inputs, tell me what is missing or optional, and agree on a finite budget. Save the research in English.
 
-The host starts with what it knows, what is needed now, and what would help. It can discover files and documentation itself. Owner-only facts, authorization boundaries and the budget may need your answer. PDFs, a direction and a prebuilt pattern bank are optional. Unknown facts remain visible rather than being filled in by guesswork.
+The host starts with what it knows, what is needed now, and what would help. It can discover files and documentation itself. It may ask you about collection details, permitted data use or the time available. PDFs, a direction and a prebuilt pattern bank are optional. Unresolved facts are recorded with the questions they affect.
 
-The complete workflow is substantial research and may take hours with parallel tasks. For a shorter first look, ask for a data card or a literature/pattern bank with a defined scope. A short onboarding check is not a complete discovery. You can stop or narrow the work at any point.
+A full discovery may take hours, even with parallel tasks. For a shorter first look, ask for a data card or a pattern library covering a defined set of papers. You can stop or narrow the work at any point.
 
 ## Choose the model in the host
 
-Maiwen inherits your selected model and reasoning settings. It does not silently upgrade a model, switch an account or route requests to a separate paid API. For complex scientific reasoning, use a capable reasoning model available on your plan; higher reasoning effort may trade latency and usage for deeper work. There is no Maiwen-specific model name or universal best setting. Keep the host/model settings with the run's notes when comparing outputs.
+Choose the model and reasoning effort in Codex or Claude Code. Maiwen keeps those settings and uses the same account unless you explicitly request a change. For complex scientific reasoning, use a capable reasoning model available on your plan; higher reasoning effort may trade latency and usage for deeper work. There is no Maiwen-specific model name or universal best setting. Keep the host/model settings with the run's notes when comparing outputs.
 
-Native subagents are needed for the complete independent workflow. If they or required sources are unavailable, the host should save useful preparation and a precise review handoff. It should not label self-review as independent review.
+The full workflow needs native subagents so that authors and reviewers work separately. If subagents or essential sources are unavailable, the host saves the useful preparation and explains which reviews remain.
 
 ## Build a reusable pattern bank
 
@@ -59,7 +59,7 @@ Use `learn-patterns` (Claude Code: `/maiwen:learn-patterns`):
 
 > Learn useful ways of forming research questions and hypotheses from the papers in `/absolute/papers/path`. Have an independent agent review the sources and transfer conditions. Save a portable English bank in `paperbanks/my-field`.
 
-You can instead name a field and ask the host to find instructive papers. During discovery, Maiwen coordinates this work automatically. Reuse supported, reviewed material and check its applicability to the next dataset.
+You can instead name a field and ask the host to find instructive papers. During discovery, Maiwen coordinates this work automatically. Bring the library to later projects, checking whether its reasoning and data requirements apply to each new setting.
 
 ## Read and continue
 
